@@ -1,7 +1,0 @@
-print("hi")
-name=input("what's your name: ")
-print("hi "+ name)
-color=input("what's your favorite color " + name + ": " )
-animal=input("so " + name + " whats you favorite animal: ")
-print("ok lets double check. your name is " + name +" and you like " + color +" " +animal + "s" )
-print("oh that's wrong?")
