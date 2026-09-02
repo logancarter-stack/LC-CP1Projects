@@ -53,4 +53,5 @@ while True:
         break
 total_num=one+two+three+four+five+six+seven
 average_grade=(total_num/7)
-print(average_grade)
+print(average_grade) 
+print('yay')
