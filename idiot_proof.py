@@ -15,3 +15,11 @@ while True:
 print(f"calling {phone}")
 print("Ring ring ring Ring ring ring Ring ring ring")
 print(f"*over phone* hello is this {name} ?")
+while True:
+    try 
+        gpa=int(input("what is your gpa"))
+    except:
+        print("hey stupid that\'s not a number.")
+    else:
+        break  
+        
