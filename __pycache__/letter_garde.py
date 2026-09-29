@@ -17,7 +17,23 @@ if grade >= 94:
     print("You've got an A")
 elif grade >= 90:
     print("You've got an A-")
-elif grade >= 90:
+elif grade >= 87:
     print("You've got an B+")
-elif grade >= 90:
+elif grade >= 84:
     print("You've got an B")
+elif grade >= 80:
+    print("You've got an B-")
+elif grade >= 77:
+    print("You've got an C+")
+elif grade >= 74:
+    print("You've got an C")
+elif grade >= 70:
+    print("You've got an C-")
+elif grade >= 67:
+    print("You've got an D+")
+elif grade >= 64:
+    print("You've got an D")
+elif grade >= 60:
+    print("You've got an D-")
+else:
+    print("You've got an F")
