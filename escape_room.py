@@ -1,6 +1,6 @@
 # LCC ecsape room 1
 
-code = "duck duck goose"
+code = "duckduckgoose"
 tries = 0
 print("you are traped in a room guess to code to ecsape you have 10 tries. good luck.")
 
