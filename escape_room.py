@@ -38,10 +38,10 @@ while True:
                print("Incorrect! Hint: word 1 and 2 are common birds.")
                print(f"You have used {tries} of your 10 tries. Be careful")
         elif tries == 10:
-               print("Incorrect! Hint: a water version of this game is drip drip drop.")
+               print("Incorrect! Hint: a water version of this game is drip drip drop(no spaces).")
                print(f"You have used all of your 10 tries but im a nice guy so heres a extra try.")
         elif tries == 11 :
-               print("Incorrect! the code was duck duck goose.")
+               print("Incorrect! the code was duckduckgoose.")
                print(f"You have used all of your 10 tries plus your bonus try. you failed. have fun rotting in this room forever")
         else:
                break
