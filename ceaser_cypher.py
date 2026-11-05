@@ -23,7 +23,7 @@ def main():
     print("_-_*Caesar Cipher Coder*_-_")
     choice = input("Press 1 to encode press 2 to decode: ")
     if choice not in ['1', '2']:
-        print("Use either 1 or 2")
+        print("good bye")
         return
 
     message = input("Enter the code: ")
@@ -32,7 +32,7 @@ def main():
         user_input = input("By how much do you want to shift: ")
         shift_value = int(user_input)
     except ValueError:
-        print(f"Choose a number not this '{user_input}' trash")
+        print(f"Choose a number not this '{user_input}' ")
         return
     
     if choice == '1':
