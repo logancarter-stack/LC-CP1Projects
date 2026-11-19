@@ -8,20 +8,20 @@ menu={
     "Main": {
         "booger":6,
         "hot DOG":6,
-        "burriTOE":5,
-        "SANDwitch":5
+        "burriTOE":6,
+        "SANDwitch":6
     },
     "Drinks" :{
         "Coke and men toes":3,
         "minty orange juice":3,
         "ketchup and mustard":3,
-        "Chick-Fil-A sauce":4
+        "Chick-Fil-A sauce":3
     },
     "Sides" : {
         "french thighs":2,
         "sonion rings" :2,
-        "mac and knees" :3,
-        "mashed potaTOEs": 1
+        "mac and knees" :2,
+        "mashed potaTOEs": 2
 
     }
 }
@@ -34,7 +34,7 @@ for category, items in menu.items():
     for item, price in items.items():
       print(f" - {item}: ${price}")
 
-def get_valid_item(prompt_text, allowed_categories):
+def get_item(prompt_text, allowed_categories):
   while True:
     choice = input(prompt_text)
     for cat in allowed_categories:
@@ -42,30 +42,18 @@ def get_valid_item(prompt_text, allowed_categories):
         return choice
     print("try again wrong input")
 
-def order():
-  order = []
-  order.append(get_valid_item("\nSelect a Drink: ", ["Drinks"]))
-  order.append(get_valid_item("\nSelect a Main Course : ", ["Main"]))
-  order.append(get_valid_item("\nSelect your 1st Side Dish: ", ["Sides"]))
-  order.append(get_valid_item("\nSelect your 2nd Side Dish: ", ["Sides"]))
+order = []
+order.append(get_item("\nSelect a Drink: ", ["Drinks"]))
+order.append(get_item("\nSelect a Main Course : ", ["Main"]))
+order.append(get_item("\nSelect your 1st Side Dish: ", ["Sides"]))
+order.append(get_item("\nSelect your 2nd Side Dish: ", ["Sides"]))
+print("here is your order:")
+print(*order)
+print(f"here is your total: $11")
 
-  #placing order
-  while True:
-    choice = input("\nWhat else do you want? (type 'done' to finish): ")
-    if choice.lower() == "done":
-      break
 
-    found = False
-    for items in menu.values():
-      if choice in items:
-        found = True
 
-    if found:
-      order.append(choice)
-    else:
-      print("Try again wrong input")
-  return order
-#endregion
+
 
 
 
