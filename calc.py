@@ -40,7 +40,7 @@ def get_num():
             numbers.append(number)
 
         except ValueError:
-            print("Please enter a valid number or type 'done'.")
+            print(" enter a valid number or type 'done'.")
 
     return numbers
 
@@ -51,16 +51,16 @@ def welcome():
 
     while True:
         function = input(
-            "\nWhich function would you like to perform? "
+            "\nWhich function would you like to perform bruh :  "
         )
         if function not in ["sum", "average", "max", "min", "product"]:
-            print("Invalid function. Please try again.")
+            print("Invalid function. try again.")
             continue
 
         numbers = get_num()
 
         if len(numbers) == 0:
-            print("You didn't enter any numbers.")
+            print("You no number silly.")
             continue
 
         print(f"\nCalculating {function} of: {', '.join(map(str, numbers))}")
@@ -70,10 +70,10 @@ def welcome():
         print(f"Result: {anwser}")
 
         more = input(
-            "\nWould you like to perform another calculation? (yes/no) "
+            "\n do you wanna perform another calculation :  (yes/no) "
         )
         if more != "yes":
             break
 
-    print("\nThank you for using the Flexible Calculator!")
+    print("\nThank bruh")
 
