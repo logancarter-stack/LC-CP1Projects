@@ -1,4 +1,4 @@
-def calculator(*args, function="sum"):
+def calc(*args, function="sum"):
     if len(args) == 0:
         return "Error: No numbers provided."
 
@@ -65,7 +65,7 @@ def welcome():
 
         print(f"\nCalculating {function} of: {', '.join(map(str, numbers))}")
 
-        anwser = calculator(*numbers, function=function)
+        anwser = calc(*numbers, function=function)
 
         print(f"Result: {anwser}")
 
