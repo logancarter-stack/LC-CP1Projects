@@ -70,12 +70,12 @@ def welcome():
         print(f"Result: {anwser}")
 
         more = input(
-            "\n do you wanna perform another calculation :  (yes/no) "
+            "\n do you wanna perform another calculation :  (yea/nah) "
         )
-        if more != "yes":
+        if more != "yea":
             break
 
-    print("\nThank bruh")
+    print("\nThanks bruh")
 
 
-welcome 
+welcome()
