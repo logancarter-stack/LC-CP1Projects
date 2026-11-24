@@ -77,4 +77,5 @@ def welcome():
 
     print("\nThank bruh")
 
-welcome
+
+welcome 
